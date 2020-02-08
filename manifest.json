@@ -1,0 +1,21 @@
+{
+  "name": "Ostiwe Saver",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "Ostiwe picture saver",
+    "default_popup": "app.html"
+  },
+  "permissions": [
+    "contextMenus",
+    "declarativeContent",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "js/main.js"
+    ],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}
